@@ -25,7 +25,7 @@ public class MaxElement {
           }
         }
         
-        System.out.println(max);
+        System.out.println("Max number: "+max);
         
 
         //String numbersAsString = Arrays.toString(numbers);
