@@ -3,7 +3,7 @@ package exercise4;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayInput {
+public class ArrayOutput {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -16,9 +16,17 @@ public class ArrayInput {
         {
             numbers[index] = input.nextInt();
         }
+        
+        String spazia ="";
+        
+        for (int i = 0; i < numbers.length; i++)
+        {
+          System.out.println(spazia + numbers[i]);
+          spazia = spazia + " ";
+        } 
 
-        String numbersAsString = Arrays.toString(numbers);
-        System.out.println("Numbers: " + numbersAsString);
+        //String numbersAsString = Arrays.toString(numbers);
+        //System.out.println("Numbers: " + numbersAsString);
     }
 
 }
