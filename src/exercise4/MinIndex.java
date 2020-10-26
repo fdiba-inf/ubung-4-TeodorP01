@@ -15,8 +15,8 @@ public class MinIndex {
         {
             numbers[index] = input.nextInt();
         }
-        double min = numbers[0];
 
+        double min = numbers[0];
         for (int i = 0; i<numbers.length-1; i++)
         {
           if (numbers[i]>numbers[i+1])
@@ -24,6 +24,7 @@ public class MinIndex {
             min = numbers[i+1];
           }
         }
+
         for (int j = 0; j<numbers.length-1; j++)
         {
           if (min == numbers[j])
