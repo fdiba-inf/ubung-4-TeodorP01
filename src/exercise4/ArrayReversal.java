@@ -10,9 +10,9 @@ public class ArrayReversal {
         int count = input.nextInt();
         char[] duma = new char[count];
 
-        for (int index = duma.length+1; index < 0; index--) 
+        for (int index = duma.length-1; index >= 0; index--) 
         {
-            duma[index] = input.next().charAt(duma.length+1);
+            duma[index] = input.next().charAt(0);
         }
 
         String dumasAsString = Arrays.toString(duma);
