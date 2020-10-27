@@ -19,9 +19,9 @@ public class MinIndex {
         double min = numbers[0];
         for (int i = 0; i<numbers.length; i++)
         {
-          if (numbers[i]>numbers[i+1])
+          if (numbers[i]<min)
           {
-            min = numbers[i+1];
+            min = numbers[i];
           }
         }
 
